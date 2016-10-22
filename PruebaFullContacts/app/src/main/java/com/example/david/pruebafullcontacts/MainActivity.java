@@ -17,6 +17,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     HttpURLConnection urlConnection;
     StringBuilder stringBuilder;
 
-    static final String API_KEY = "TU_KEY";
+    static final String API_KEY = "YOUR_KEY";
     static final String API_URL = "https://api.fullcontact.com/v2/person.json?";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,14 +81,18 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             try {
                 JSONObject jsonObject= new JSONObject(s);
-                String id = jsonObject.getString("requestId");
-                textView.setText(id);
+                //String id = jsonObject.getString("requestId");
+                JSONObject job = new JSONObject(jsonObject.getString("contactInfo"));
+                //Devolvemos dentro del campo contactInfo el nombre completo.
+                String nombre = job.getString("fullName");
+                //textView.setText(nombre);
+                textView.setText(s);//representamos el JSON entero.
 
                 //TODO Trabajar mejor el JSON devuelto, pudiendo representar mejor los campos devueltos
                 //TODO añadir Scroll.
 
 
-            } catch (JSONException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
