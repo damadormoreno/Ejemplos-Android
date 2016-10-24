@@ -1,0 +1,26 @@
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ServidorLocalizaciones {
+
+	public static void main(String[] args) {
+		System.out.println("Abriendo Socket para localización...");
+		try {
+			ServerSocket server = new ServerSocket(6000);//Voy a estar escuchando peticiones por un puerto.
+			while (true) {
+				System.out.println("Esperando petición.");
+				Socket socket = server.accept();//Se queda esperando hasta que llegue una petición por ese puerto
+				System.out.println("Petición recibida");
+				HiloCliente hiloCliente = new HiloCliente(socket);
+				hiloCliente.start();
+			}
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
