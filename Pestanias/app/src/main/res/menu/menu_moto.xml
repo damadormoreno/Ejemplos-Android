@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_linux"
+        android:icon="@drawable/linux"
+        app:showAsAction="ifRoom"
+        android:title="linux"/>
+
+    <item
+        android:id="@+id/action_moto"
+        android:icon="@drawable/motorbike"
+        app:showAsAction="ifRoom"
+        android:title="moto"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Configuración"
+        app:showAsAction="never"/>
+</menu>
