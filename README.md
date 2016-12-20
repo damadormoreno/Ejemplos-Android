@@ -1,6 +1,6 @@
 # Android
 Repositorio de ejemplos de Android.
 
-##Ejemplo Pestañas
-![Tabs gif](img/tabs.gif)
+##Ejemplo Pestañas (Pestanias)
+![Tabs gif](img/tabs208x328.gif)
 
