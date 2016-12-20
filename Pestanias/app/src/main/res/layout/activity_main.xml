@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="david.moreno.amador.pestanias.MainActivity">
+    <!-- Inicio de la Appbar, contiene al toolbar y al tablayout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppbarPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MiTema.AppBarOverlay">
+
+        <!-- Inicio de la Toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolbarPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!-- Fin de la Toolbar-->
+
+        <!-- Inicio de la TabLayout-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayoutPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!-- Fin de la TabLayout-->
+
+    </android.support.design.widget.AppBarLayout>
+    <!-- Fin de la Appbar -->
+
+    <!-- Inicio del ViewPager,
+    encargado de gestionar el cambio de secciones cuando hagamos el deslizamiento horizontal -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPagerPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+
+    <!-- Fin del ViewPager -->
+</android.support.design.widget.CoordinatorLayout>
