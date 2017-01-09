@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1084390975328",
+    "firebase_url": "https://login-con-firebase-ec1b9.firebaseio.com",
+    "project_id": "login-con-firebase-ec1b9",
+    "storage_bucket": "login-con-firebase-ec1b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084390975328:android:d64cbbff049900aa",
+        "android_client_info": {
+          "package_name": "david.moreno.amador.loginconfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084390975328-vg0asnj5u5gm0f0ft261jj9v9utgvsd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "david.moreno.amador.loginconfirebase",
+            "certificate_hash": "41CB40A069237E15FE02E97F3D01721B63500BA9"
+          }
+        },
+        {
+          "client_id": "1084390975328-vm856c4th20i1nr9pklfn86jnod6650n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqZUVrZQtKzieI7aNlOAdYyKZvvipQYxw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084390975328-vm856c4th20i1nr9pklfn86jnod6650n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
